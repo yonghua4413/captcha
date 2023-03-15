@@ -129,7 +129,7 @@ class Captcha
         $text = self::$type == 3 ? self::mb_str_split($generator) : str_split($generator);
 
         // 验证码使用随机字体
-        $fontttf = __DIR__ . '/data/captcha/font.ttf';
+        $fontttf = dirname(__DIR__) . '/src/font.ttf';
         foreach ($text as $index => $char) {
 
             // 字体角度
