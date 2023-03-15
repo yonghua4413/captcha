@@ -4,7 +4,7 @@
 # | 修改自 https://github.com/top-think/think-captcha
 # +----------------------------------------------------------------------
 
-namespace Aknife\Captcha;
+namespace Aknife;
 
 class Captcha
 {
