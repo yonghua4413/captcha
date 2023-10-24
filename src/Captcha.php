@@ -196,7 +196,7 @@ class Captcha
             }
 
             // 判断是否转换小写
-            $key = $uppercase ? $string : mb_strtolower($string, 'UTF-8');
+            $key = self::$uppercase ? $string : mb_strtolower($string, 'UTF-8');
         }
 
         // 写入session
