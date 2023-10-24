@@ -4,7 +4,7 @@
 # | 修改自 https://github.com/top-think/think-captcha
 # +----------------------------------------------------------------------
 
-namespace Aknife;
+namespace Yonghua4413;
 
 class Captcha
 {
@@ -218,7 +218,7 @@ class Captcha
             $y2 = rand(1, self::$height - 1);
             $noiseColor = imagecolorallocate(self::$image, mt_rand(100,255), mt_rand(100,255), mt_rand(100,255));
 
-            imageline(self::$image, $x1, $y1, $x2, $y2, $noiseColor);
+            imageline(self::$image, $x1, $y1, $x2, $y2, self::$noiseColor);
         }
     }
 
@@ -234,7 +234,7 @@ class Captcha
             for ($j = 0; $j < 5; $j++) {
                 // 绘杂点
                 $codeSet = self::$codeSet[rand(0, strlen(self::$codeSet)-1)];
-                imagestring(self::$image, rand(1,10), mt_rand(0, self::$width), mt_rand(0, self::$height), $codeSet, $noiseColor);
+                imagestring(self::$image, rand(1,10), mt_rand(0, self::$width), mt_rand(0, self::$height), self::$codeSet, self::$noiseColor);
             }
         }
     }
