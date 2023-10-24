@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Aknife\\": "src/"
+            "Yonghua4413\\": "src/"
         }
     }
 }
